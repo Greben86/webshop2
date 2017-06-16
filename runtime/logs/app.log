@@ -1,0 +1,485 @@
+2017-06-15 07:50:14 [10.0.2.2][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php:1292
+Stack trace:
+#0 /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php(1355): yii\web\Request->getCookies()
+#2 /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php(1338): yii\web\Request->loadCsrfToken()
+#3 /home/ftp/zolushka/vendor/yiisoft/yii2/helpers/BaseHtml.php(302): yii\web\Request->getCsrfToken()
+#4 /home/ftp/zolushka/views/layouts/main.php(21): yii\helpers\BaseHtml::csrfMetaTags()
+#5 /home/ftp/zolushka/vendor/yiisoft/yii2/base/View.php(330): require('/home/ftp/zolus...')
+#6 /home/ftp/zolushka/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ftp/zolus...', Array)
+#7 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/home/ftp/zolus...', Array, Object(app\controllers\SiteController))
+#8 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 /home/ftp/zolushka/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 /home/ftp/zolushka/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#14 /home/ftp/zolushka/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#15 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/ftp/zolushka/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2017-06-15 07:50:14 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:50:14 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:50:14 [10.0.2.2][-][-][info][application] $_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513014.37
+    'REQUEST_TIME' => 1497513014
+]
+2017-06-15 07:50:14 [10.0.2.2][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' 
+
+in /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php:1292
+
+Stack trace:
+#0 /home/ftp/zolushka/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /home/ftp/zolushka/vendor/yiisoft/yii2/web/User.php(555): yii\web\Request->getCookies()
+#2 /home/ftp/zolushka/vendor/yiisoft/yii2/web/User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#3 /home/ftp/zolushka/vendor/yiisoft/yii2/web/User.php(674): yii\web\User->loginByCookie()
+#4 /home/ftp/zolushka/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#5 /home/ftp/zolushka/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIdentity()
+#6 /home/ftp/zolushka/vendor/yiisoft/yii2-debug/panels/UserPanel.php(54): yii\base\Component->__get('identity')
+#7 /home/ftp/zolushka/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#8 /home/ftp/zolushka/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#9 /home/ftp/zolushka/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#10 /home/ftp/zolushka/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 /home/ftp/zolushka/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#13 {main}
+2017-06-15 07:50:14 [10.0.2.2][-][-][info][application] $_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513014.37
+    'REQUEST_TIME' => 1497513014
+]
+2017-06-15 07:53:32 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+    in /home/ftp/zolushka/views/layouts/main.php:76
+    in /home/ftp/zolushka/controllers/SiteController.php:64
+2017-06-15 07:53:32 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:32 [10.0.2.2][-][-][info][application] $_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51399'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513212.447
+    'REQUEST_TIME' => 1497513212
+]
+2017-06-15 07:53:47 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+    in /home/ftp/zolushka/views/layouts/main.php:76
+    in /home/ftp/zolushka/controllers/SiteController.php:124
+2017-06-15 07:53:47 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:46 [10.0.2.2][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+    '_csrf' => '585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kÆÿu³ónªLj>®¥qô%Ö¸µ@Žà–ÔvP`¶7\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://site2.me/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w; _csrf=585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k%C6%19%FFu%90%B3%F3n%AALj%3E%AE%A5q%F4%25%D6%B8%B5%40%8E%0B%E0%96%D4vP%60%B67%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513226.994
+    'REQUEST_TIME' => 1497513226
+]
+2017-06-15 07:53:48 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+    in /home/ftp/zolushka/views/layouts/main.php:76
+    in /home/ftp/zolushka/controllers/SiteController.php:114
+2017-06-15 07:53:48 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:48 [10.0.2.2][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+    '_csrf' => '585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kÆÿu³ónªLj>®¥qô%Ö¸µ@Žà–ÔvP`¶7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lacsge'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://site2.me/index.php?r=site%2Fabout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w; _csrf=585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k%C6%19%FFu%90%B3%F3n%AALj%3E%AE%A5q%F4%25%D6%B8%B5%40%8E%0B%E0%96%D4vP%60%B67%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513228.873
+    'REQUEST_TIME' => 1497513228
+]
+2017-06-15 07:53:48 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:48 [10.0.2.2][-][-][info][application] $_GET = [
+    'r' => 'site/captcha'
+    'v' => '59423d0cda57f'
+]
+
+$_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+    '_csrf' => '585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kÆÿu³ónªLj>®¥qô%Ö¸µ@Žà–ÔvP`¶7\";}'
+    'PHPSESSID' => 'nnvoag435748lrogodo4j6j2d5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lacsge'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://site2.me/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w; _csrf=585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k%C6%19%FFu%90%B3%F3n%AALj%3E%AE%A5q%F4%25%D6%B8%B5%40%8E%0B%E0%96%D4vP%60%B67%22%3B%7D; PHPSESSID=nnvoag435748lrogodo4j6j2d5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcaptcha&v=59423d0cda57f'
+    'REQUEST_URI' => '/index.php?r=site%2Fcaptcha&v=59423d0cda57f'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513228.932
+    'REQUEST_TIME' => 1497513228
+]
+2017-06-15 07:53:50 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+    in /home/ftp/zolushka/views/layouts/main.php:76
+    in /home/ftp/zolushka/controllers/SiteController.php:84
+2017-06-15 07:53:50 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:50 [10.0.2.2][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+    '_csrf' => '585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kÆÿu³ónªLj>®¥qô%Ö¸µ@Žà–ÔvP`¶7\";}'
+    'PHPSESSID' => 'nnvoag435748lrogodo4j6j2d5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lacsge'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://site2.me/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w; _csrf=585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k%C6%19%FFu%90%B3%F3n%AALj%3E%AE%A5q%F4%25%D6%B8%B5%40%8E%0B%E0%96%D4vP%60%B67%22%3B%7D; PHPSESSID=nnvoag435748lrogodo4j6j2d5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51413'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513230.442
+    'REQUEST_TIME' => 1497513230
+]
+2017-06-15 07:53:56 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+    in /home/ftp/zolushka/views/layouts/main.php:76
+    in /home/ftp/zolushka/controllers/SiteController.php:64
+2017-06-15 07:53:56 [10.0.2.2][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.0.2.2
+2017-06-15 07:53:56 [10.0.2.2][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    '_ym_uid' => '1494587808612799579'
+    'jv_enter_ts_uDzudLQqlo' => '1494587808479'
+    'jv_visits_count_uDzudLQqlo' => '1'
+    'Apache' => 'c5ce132c.54f53241951fa'
+    'jv_enter_ts_oGdVHv5nG1' => '1494593393812'
+    'jv_visits_count_oGdVHv5nG1' => '1'
+    '_ym_isad' => '1'
+    '_ym_visorc_23948401' => 'w'
+    '_csrf' => '585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kÆÿu³ónªLj>®¥qô%Ö¸µ@Žà–ÔvP`¶7\";}'
+    'PHPSESSID' => 'nnvoag435748lrogodo4j6j2d5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lacsge'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'site2.me'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://site2.me/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_ym_uid=1494587808612799579; jv_enter_ts_uDzudLQqlo=1494587808479; jv_visits_count_uDzudLQqlo=1; Apache=c5ce132c.54f53241951fa; jv_enter_ts_oGdVHv5nG1=1494593393812; jv_visits_count_oGdVHv5nG1=1; _ym_isad=1; _ym_visorc_23948401=w; _csrf=585edee7661fac3e558fa22b09be783ad4d55594562bc4d2e019264005c9a472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22k%C6%19%FFu%90%B3%F3n%AALj%3E%AE%A5q%F4%25%D6%B8%B5%40%8E%0B%E0%96%D4vP%60%B67%22%3B%7D; PHPSESSID=nnvoag435748lrogodo4j6j2d5'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Debian) Server at site2.me Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Debian)'
+    'SERVER_NAME' => 'site2.me'
+    'SERVER_ADDR' => '10.0.2.15'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.0.2.2'
+    'DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ftp/zolushka/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ftp/zolushka/web/index.php'
+    'REMOTE_PORT' => '51419'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497513236.747
+    'REQUEST_TIME' => 1497513236
+]
